@@ -13,9 +13,9 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>Spring-docker</name>
     <description>Spring-docker</description>
-    <properties>
+    <!-- <properties>
         <java.version>1.8</java.version>
-    </properties>
+    </properties> -->
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

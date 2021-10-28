@@ -8,6 +8,7 @@ public class Controller {
 
     @GetMapping
     public String greetings(){
-        return "Hello Vikram, Welcome to Docker World";
+        String str = "Hello Vikram, Welcome to Docker World";
+        return str;
     }
 }
