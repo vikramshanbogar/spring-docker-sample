@@ -56,36 +56,36 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.37.0</version>
 
-                <configuration>
-                    <!--  <dockerHost>http://127.0.0.1:2375</dockerHost> -->
-                    <!--  this is for Mac and Amazon Linux -->
-                    <!-- <dockerHost>unix:///var/run/docker.sock</dockerHost> -->
+<!--                <configuration>-->
+<!--                    &lt;!&ndash;  <dockerHost>http://127.0.0.1:2375</dockerHost> &ndash;&gt;-->
+<!--                    &lt;!&ndash;  this is for Mac and Amazon Linux &ndash;&gt;-->
+<!--                    &lt;!&ndash; <dockerHost>unix:///var/run/docker.sock</dockerHost> &ndash;&gt;-->
 
-                    <verbose>true</verbose>
+<!--                    <verbose>true</verbose>-->
 
-                    <!-- Needed if pushing to DockerHub: preferred to store these in local environment (see the course) -->
-                    <authConfig>
-                        <username>vikramsvk</username>
-                        <password>Vinayak*0</password>
-                    </authConfig>
+<!--                    &lt;!&ndash; Needed if pushing to DockerHub: preferred to store these in local environment (see the course) &ndash;&gt;-->
+<!--                    <authConfig>-->
+<!--                        <username>vikramsvk</username>-->
+<!--                        <password></password>-->
+<!--                    </authConfig>-->
 
-                    <images>
-                        <image>
-                            <name>vikramsvk/spring-boot-docker-sample-vik:1.0</name>
-                            <build>
-                                <dockerFileDir>${project.basedir}</dockerFileDir>
+<!--                    <images>-->
+<!--                        <image>-->
+<!--                            <name>vikramsvk/spring-boot-docker-sample-vik:1.0</name>-->
+<!--                            <build>-->
+<!--                                <dockerFileDir>${project.basedir}</dockerFileDir>-->
 
-                                <!--copies Jar to the maven directory (uses Assembly system)-->
-                                <assembly>
-                                    <descriptorRef>artifact</descriptorRef>
-                                </assembly>
-                                <tags>
-                                    <tag>latest</tag>
-                                </tags>
-                            </build>
-                        </image>
-                    </images>
-                </configuration>
+<!--                                &lt;!&ndash;copies Jar to the maven directory (uses Assembly system)&ndash;&gt;-->
+<!--                                <assembly>-->
+<!--                                    <descriptorRef>artifact</descriptorRef>-->
+<!--                                </assembly>-->
+<!--                                <tags>-->
+<!--                                    <tag>latest</tag>-->
+<!--                                </tags>-->
+<!--                            </build>-->
+<!--                        </image>-->
+<!--                    </images>-->
+<!--                </configuration>-->
                 <executions>
                     <execution>
                         <phase>package</phase>
